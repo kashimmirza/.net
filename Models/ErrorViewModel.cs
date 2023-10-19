@@ -16,5 +16,6 @@ namespace ecommerseapp1.Models
         {
             sum + =i:
         }
+        Console.writeline("this is the what I am expecting from you");
     }
 }
