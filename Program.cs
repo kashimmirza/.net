@@ -12,11 +12,10 @@ public partial class Program
         Solution solution = new Solution();
         int[] nums1 = { 1, 2, 2, 1 };
         int[] nums2 = { 2, 2 };
-        int[] result = solution.Intersect(nums1, nums2);
-        Console.WriteLine("Intersection:");
-        foreach (var num in result)
-        {
-            Console.WriteLine(num);
-        }
+
+        string[] words = { "bella", "label", "roller" };
+        CommonCharacters bb = new CommonCharacters();
+        bb.CommonChars(words);
+
     }
 }
