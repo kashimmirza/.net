@@ -20,41 +20,10 @@ public class Program
         {
             Console.WriteLine(num);
         }
-        int[] nums = { 1,2 };
-        int k = 2;
-        Solution1 solution2 = new Solution1();
-        solution2.FindKthLargest(nums, k);
-        int[] arr = { 3,5,5};
-        Solutionval solutionvalid = new Solutionval();
-        solutionvalid.ValidMountainArray(arr);
-        Solutionduplicate solutionduplicate = new Solutionduplicate();
-        solutionduplicate.RemoveDuplicates(nums);
-        Solutionremoveduplicate solutionremoveduplicate = new Solutionremoveduplicate();
-        int[] arr1 = { 1, 0, 2, 3, 0, 4, 5, 0 };
-        solutionremoveduplicate.RemoveElement(arr1, 3);
-        Solutionevenfirst solutionevenfirst = new Solutionevenfirst();
-        solutionevenfirst.SortArrayByParity(arr1);
-        Solutiondoublezero abc = new Solutiondoublezero();
-        int[] arr2 = { 1, 0, 2, 3, 0, 4, 5, 0 };
-        abc.DuplicateZeros(arr2);
-
-
-
-
     }
 }
 
-public class Solution1
-{
-    public int FindKthLargest(int[] nums, int k)
-    {
-        if (k < 1 || k > nums.Length)
-            throw new ArgumentException("Invalid value of k");
 
-        List<int>list = new List<int>();
-        foreach (int num in nums)
-        {
-            list.Add(num);
 
         }
         return quickselect(list, k);
